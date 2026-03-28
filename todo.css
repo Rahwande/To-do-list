@@ -1,0 +1,107 @@
+/* 1. LAYOUT & BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.todo-container {
+    background: white;
+    width: 350px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* 2. STATS & INPUT */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 3. TASK LIST & ITEMS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* 4. ICON & TEXT STYLES */
+.task-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.task-text i {
+    color: #cbd5e0; /* Light grey for the empty circle */
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.task-text span {
+    font-size: 16px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+/* 5. COMPLETED STATE (When task is clicked) */
+.completed span {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+.completed i {
+    color: #48bb78 !important; /* Green for the checkmark */
+}
+
+/* 6. DELETE BUTTON WITH TRASH ICON */
+.delete-btn {
+    background: transparent; /* Makes it look cleaner with icons */
+    color: #e53e3e;
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #fff5f5;
+    transform: scale(1.1);
+}
